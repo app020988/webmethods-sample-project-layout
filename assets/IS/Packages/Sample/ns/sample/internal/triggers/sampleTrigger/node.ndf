@@ -5,6 +5,7 @@
   <value name="node_subtype">unknown</value>
   <value name="node_nsName">sample.internal.triggers:sampleTrigger</value>
   <value name="node_pkg">Sample</value>
+  <value name="node_comment"></value>
   <value name="is_public">false</value>
   <value name="trigger_type">jms-trigger</value>
   <record name="trigger" javaclass="com.wm.util.Values">
@@ -27,7 +28,7 @@
     <value name="resolutionHistoryTTL">7200000</value>
     <value name="uniqueId">IYJxEr1k4eCfReVkq8GyGB9z6Og=</value>
     <value name="executeUser">Administrator</value>
-    <null name="aliasName"/>
+    <value name="aliasName">testUM</value>
     <number name="jmsTriggerType" type="Integer">0</number>
     <Boolean name="enabled">true</Boolean>
     <value name="prefetchSize">10</value>
@@ -40,9 +41,20 @@
     <value name="joinTimeout">86400000</value>
     <value name="serialSuspendOnError">false</value>
     <array name="routingRules" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="ruleName">Rule1</value>
+        <value name="serviceName">sample.internal.subscriber:log</value>
+        <value name="filter"></value>
+      </record>
     </array>
     <array name="destinations" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="destination">test</value>
+        <value name="messageSelector"></value>
+        <number name="destinationType" type="Integer">1</number>
+        <null name="durableSubscriberName"/>
+        <Boolean name="durableSubscriberNoLocal">false</Boolean>
+      </record>
     </array>
   </record>
-  <value name="LOCK_REQUIRED">true</value>
 </Values>
