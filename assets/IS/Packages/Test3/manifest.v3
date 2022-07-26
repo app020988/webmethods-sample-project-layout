@@ -10,11 +10,4 @@
   <null name="requires"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
-  <value name="name">Test3</value>
-  <value name="build">1.0.14</value>
-  <null name="description"/>
-  <value name="time">2022-07-26 14:43:00 IST</value>
-  <value name="jvm_version">1.8.0_341</value>
-  <value name="publisher">DESKTOP-SCBEH7I</value>
-  <value name="patch_nums"></value>
 </Values>
